@@ -21,14 +21,19 @@
         </div>
         
         <nav class="flex items-center gap-4">
-          <button 
-            @click="theme.toggleDark()"
-            class="p-2 rounded-lg bg-white/20 hover:bg-white/30 text-white transition-colors backdrop-blur-sm"
-            title="Toggle Theme"
-          >
-            <Sun v-if="theme.isDark.value" class="w-5 h-5" />
-            <Moon v-else class="w-5 h-5" />
-          </button>
+          <ClientOnly>
+            <button 
+              @click="theme.toggleDark()"
+              class="p-2 rounded-lg bg-white/20 hover:bg-white/30 text-white transition-colors backdrop-blur-sm"
+              title="Toggle Theme"
+            >
+              <Sun v-if="theme.isDark.value" class="w-5 h-5" />
+              <Moon v-else class="w-5 h-5" />
+            </button>
+            <template #fallback>
+              <div class="w-9 h-9 p-2 rounded-lg bg-white/20 backdrop-blur-sm"></div>
+            </template>
+          </ClientOnly>
           
           <a href="https://github.com/Jaycruzerville/Weather-Forecast-System" target="_blank" class="text-white/80 hover:text-white transition-colors">
             <Github class="w-5 h-5" />
