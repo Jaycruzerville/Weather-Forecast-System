@@ -2,6 +2,8 @@
 
 Hey! Welcome to my Weather Dashboard. I built this using **Nuxt 3** because I wanted to create something that didn't just work well, but also looked and felt great to use. It connects to the OpenWeatherMap API to give you accurate weather info for pretty much any city you can think of.
 
+![Weather Dashboard Screenshot](public/screenshots/dashview.png)
+
 ## What Can It Do?
 
 I didn't want just a boring list of numbers, so here's what I packed into this app:
