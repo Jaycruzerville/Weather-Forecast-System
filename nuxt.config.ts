@@ -7,6 +7,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
 
+  nitro: {
+    preset: 'vercel'
+  },
+
 
 
   runtimeConfig: {
